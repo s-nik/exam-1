@@ -1,0 +1,52 @@
+@mixin tr {
+	transition: all .4s linear;
+}
+
+@mixin myPos($top: 50%, $left: 50%, $tx: -50%, $ty: -50%) {
+	position: absolute;
+	top: $top;
+	left: $left;
+	transform: translate($tx, $ty);
+}
+
+@mixin flex($direction: row, $wrap: nowrap, $align: center, $content: space-between) {
+	display: flex;
+	flex-direction: $direction;
+	flex-wrap: $wrap;
+	align-items: $align;
+	justify-content: $content;
+}
+
+@mixin align($mh:3em) {
+		text-align: center;
+		max-height: $mh;
+		overflow: hidden;
+}
+
+@mixin td {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+@mixin dl {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'Aleo', sans-serif;
+	color: #fff;
+	font-weight: 400;
+}
+
+@mixin bi {
+	display: block;
+	content: "";
+	width: 65px;
+	height: 65px;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+@mixin bd {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
