@@ -38,7 +38,7 @@ body {
 	@include dl;
 	font-size: 1.6rem;
 	font-family: $font-al;
-	line-height: 1.8;
+	line-height: 1.9;
 	letter-spacing: 1px;
 	text-align: center;
 	@include tr;
@@ -110,6 +110,7 @@ body {
 		color: $text-color;
 		display: inline-block;
 		@include tr;
+		@include flex($direction: column);
 		&:hover,
 		&:focus,
 		&:active {
@@ -160,7 +161,7 @@ body {
 		width: 45%;
 		font-size: 0;
 		border: 2px solid $text-color;
-		@include flex;
+		@include flex();
 		min-width: 400px;
 	}
 	&__input {
@@ -181,7 +182,7 @@ body {
 		font-family: $font-al;
 		font-size: 1.4rem;
 		height: 55px;
-		line-height: 55px;
+		line-height: 51px;
 		width: 30%;
 		outline: none;
 		border: none;
@@ -328,6 +329,7 @@ body {
 		@include flex;
 		align-items: stretch;
 		margin-top: 70px;
+		background-color: $active-color;
 	}
 	&__img-wrap {
 		display: block;
